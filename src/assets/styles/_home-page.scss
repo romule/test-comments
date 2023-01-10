@@ -14,3 +14,13 @@
     opacity: 0;
   }
 }
+
+.posts-table {
+  margin: 20px;
+
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

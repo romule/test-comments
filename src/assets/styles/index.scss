@@ -1,22 +1,33 @@
 @import './_home-page.scss';
 
+body {
+  margin: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: #0a0908;
 }
 
 nav {
+  background-color: #22333b;
   padding: 30px;
+  display: flex;
+  justify-content: flex-start;
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #5e503f;
+    text-decoration: none;
+
+    &:first-child {
+      margin-right: 8px;
+    }
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #eae0d5;
     }
   }
 }

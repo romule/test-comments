@@ -1,18 +1,14 @@
 <template>
   <div class="post">
-    <h1>{{ post.title }}</h1>
-    <p>{{ post.body }}</p>
-    <span>{{ post.comments.length }}</span>
+    <div class="content">
+      <h3 class="post_header">{{ post.title }}</h3>
+      <p class="post_body">{{ post.body }}</p>
+      <span class="post_comments">Comments ({{ post.comments.length }})</span>
+    </div>
+    <canvas class="grafics" ref="chart"></canvas>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'postCard',
-  props: {
-    post: { type: Object },
-  },
-};
-</script>
+<script src="./script.js"></script>
 
 <style lang="scss" src="./style.scss" scoped></style>
