@@ -9,6 +9,8 @@ export default {
   mounted() {
     // console.log(this.post.comments.map((c) => c.body.length));
 
+    // console.log(this.$refs);
+
     new Chart(this.$refs.chart, {
       type: 'bar',
       data: {
